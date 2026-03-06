@@ -1,24 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Brandon Lara - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Lara | Portfolio</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+<header>
   <h1>Brandon Lara</h1>
-  <p>Frontend Developer (React / JavaScript)</p>
+  <p>Frontend Developer | Mobile Developer</p>
+  <p>React • Next.js • React Native
+    Node.js • NestJS
+    JavaScript</p>
+</header>
 
-  <h2>Projects</h2>
+<section class="projects">
 
-  <ul>
-    <li>
-      <a href="https://github.com/brandoneck/mobileChallenge">Mobile Wheater</a>
-    </li>
-    <li>
-      <a href="https://github.com/brandoneck/facturasAI">Invoice Formater</a>
-    </li>
-    <li>
-      <a href="https://github.com/brandoneck/hospital">Hospital Branding Page</a>
-    </li>
-  </ul>
+  <div class="card">
+    <img src="#" alt="Invoice Format Converter screenshot">
+  
+    <div class="card-content">
+      <h3>Hospital Branding Page</h3>
+      <p>
+        Landing page para hospital con secciones informativas, 
+        contenido editable y diseño responsive.
+      </p>
+      <p class="tech">
+        React • Next • Responsive UI
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/brandoneck/hospital" target="_blank" rel="noopener">
+          Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="#" alt="Invoice Format Converter screenshot">
+  
+    <div class="card-content">
+      <h3>Weather Forecast Mobile App</h3>
+      <p>
+        Aplicación móvil para consultar el clima de distintas ciudades
+        con pronóstico de los próximos 3 días usando API de clima.
+      </p>
+      <p class="tech">
+        React Native • REST API • Async Data
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
+          Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/invoice-converter.jpg" alt="Invoice Format Converter screenshot">
+  
+    <div class="card-content">
+      <h3>Invoice Format Converter (AI)</h3>
+      <p>
+        Script que utiliza Gemini API para convertir facturas
+        de distintos formatos a una estructura estándar.
+      </p>
+      <p class="tech">
+        Python • Gemini API • Data Processing
+      </p>
+      <div class="buttons">
+        <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
+          Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
 </body>
 </html>
