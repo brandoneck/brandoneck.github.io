@@ -1,0 +1,35 @@
+# Brandon Lara - Portfolio
+
+Personal developer portfolio showcasing projects built with React, React Native, Node.js and Python.
+
+🔗 Live site  
+https://tuusuario.github.io
+
+## Projects
+
+### Hospital Branding Page
+Landing page for a hospital with responsive layout and editable content.
+
+Tech:
+React • Next • Responsive UI
+
+---
+
+### Weather Forecast Mobile App
+Mobile application that retrieves weather information and 3-day forecast for multiple cities.
+
+Tech:
+React Native • Expo • REST API
+
+---
+
+### Invoice Format Converter (AI)
+Script that uses Gemini API to convert invoices from different formats into a standardized structure.
+
+Tech:
+Python • Gemini API • Data Processing
+
+## Author
+
+Brandon Lara  
+Frontend Developer

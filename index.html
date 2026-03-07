@@ -1,86 +1,173 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brandon Lara | Portfolio</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Lara | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Brandon Lara</h1>
-  <p>Frontend Developer | Mobile Developer</p>
-  <p>React • Next.js • React Native
-    Node.js • NestJS
-    JavaScript</p>
-</header>
+  <header>
+    <h1>Brandon Lara</h1>
+    <h2>Software Developer</h2>
 
-<section class="projects">
 
-  <div class="card">
-    <img src="#" alt="Invoice Format Converter screenshot">
-  
-    <div class="card-content">
-      <h3>Hospital Branding Page</h3>
+    <section id="about">
+      <h2>About Me</h2>
+
       <p>
-        Landing page para hospital con secciones informativas, 
-        contenido editable y diseño responsive.
+        Software developer focused on building web and mobile
+        applications using the React ecosystem.<br>
+        I have experience working with React, Next.js and React Native,
+        as well as integrating backend APIs using Node.js and NestJS.
+        <br>
+        I enjoy building clean user interfaces and scalable solutions.
       </p>
-      <p class="tech">
-        React • Next • Responsive UI
+
+      <p>
+
       </p>
-      <div class="buttons">
-        <a href="https://github.com/brandoneck/hospital" target="_blank" rel="noopener">
-          Code
+
+      <div class="resume">
+        <a class="buttons" href="files/Brandon-Lara-CV.pdf" target="_blank">
+          Download CV
         </a>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div class="card">
-    <img src="#" alt="Invoice Format Converter screenshot">
-  
-    <div class="card-content">
-      <h3>Weather Forecast Mobile App</h3>
-      <p>
-        Aplicación móvil para consultar el clima de distintas ciudades
-        con pronóstico de los próximos 3 días usando API de clima.
-      </p>
-      <p class="tech">
-        React Native • REST API • Async Data
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
-          Code
+    <section class="tech-stack">
+      <h2>Tech Stack</h2>
+
+      <div class="tech-grid">
+
+        <div class="tech-column">
+          <h3>Frontend</h3>
+          <div class="tech-items">
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>React Native</span>
+            <span>Redux Toolkit</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+        </div>
+
+        <div class="tech-column">
+          <h3>Backend</h3>
+          <div class="tech-items">
+            <span>Node.js</span>
+            <span>Express</span>
+            <span>Firebase</span>
+          </div>
+        </div>
+
+        <div class="tech-column">
+          <h3>Tools</h3>
+          <div class="tech-items">
+            <span>Git</span>
+            <span>Figma</span>
+            <span>Material UI</span>
+            <span>Reactstrap</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="card">
+          <img class="project-img" src="images/hospital.png" alt="Hospital Branding Page screenshot">
+
+          <div class="card-content">
+            <h3>Hospital Branding Page</h3>
+            <p>
+              Landing page for a hospital with informational sections,
+              editable content and a responsive design.
+            </p>
+
+            <p>
+              React • Next.js • Responsive UI
+            </p>
+            <div class="buttons">
+              <a href="https://github.com/brandoneck/hospital" target="_blank" rel="noopener">
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="project-img" src="images/app.jpeg" alt="Weather Forecast Mobile App screenshot">
+
+          <div class="card-content">
+            <h3>Weather Forecast Mobile App</h3>
+            <p>
+              Mobile application to check the weather in different cities,
+              including a 3-day forecast using a weather API.
+            </p>
+
+            <p>
+              React Native • Expo • Wheater API
+            </p>
+            <div class="buttons">
+              <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
+                GitHub Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="project-img" src="images/facturas.png" alt="Invoice Format Converter screenshot">
+
+          <div class="card-content">
+            <h3>Invoice Format Converter (AI)</h3>
+            <p>
+              Script that uses the Gemini API to convert invoices from
+              different formats into a standardized JSON structure.
+            </p>
+
+            <p>
+              Python • Gemini API • Data Processing
+            </p>
+            <div class="buttons">
+              <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
+                GitHub Code
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:brandoneck@live.com.mx">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/brandoneck" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/brandonlr" target="_blank">
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <img src="images/invoice-converter.jpg" alt="Invoice Format Converter screenshot">
-  
-    <div class="card-content">
-      <h3>Invoice Format Converter (AI)</h3>
-      <p>
-        Script que utiliza Gemini API para convertir facturas
-        de distintos formatos a una estructura estándar.
-      </p>
-      <p class="tech">
-        Python • Gemini API • Data Processing
-      </p>
-      <div class="buttons">
-        <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
-          Code
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-</section>
+    </section>
 
 </body>
+
 </html>
