@@ -12,7 +12,16 @@
 <body>
 
   <header>
-    <h1>Brandon Lara</h1>
+    <h1 class="name">Brandon Lara</h1>
+
+    <!-- <div class="tech-icons">
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-react"></i>
+      <i class="fa-brands fa-node"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+    </div> -->
     <h2>Software Developer</h2>
 
 
@@ -83,73 +92,9 @@
     <section class="projects">
       <h2>Projects</h2>
 
-      <div class="projects-grid">
+      <div id="projects-container" class="projects-grid"></div>
 
-        <div class="card">
-          <img class="project-img" src="images/hospital.png" alt="Hospital Branding Page screenshot">
 
-          <div class="card-content">
-            <h3>Hospital Branding Page</h3>
-            <p>
-              Landing page for a hospital with informational sections,
-              editable content and a responsive design.
-            </p>
-
-            <p>
-              React • Next.js • Responsive UI
-            </p>
-            <div class="buttons">
-              <a href="https://github.com/brandoneck/hospital" target="_blank" rel="noopener">
-                GitHub Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="project-img" src="images/app.jpeg" alt="Weather Forecast Mobile App screenshot">
-
-          <div class="card-content">
-            <h3>Weather Forecast Mobile App</h3>
-            <p>
-              Mobile application to check the weather in different cities,
-              including a 3-day forecast using a weather API.
-            </p>
-
-            <p>
-              React Native • Expo • Weather API
-            </p>
-            <div class="buttons">
-              <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
-                GitHub Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="project-img" src="images/facturas.png" alt="Invoice Format Converter screenshot">
-
-          <div class="card-content">
-            <h3>Invoice Format Converter (AI)</h3>
-            <p>
-              Script that uses the Gemini API to convert invoices from
-              different formats into a standardized JSON structure.
-            </p>
-
-            <p>
-              Python • Gemini API • Data Processing
-            </p>
-            <div class="buttons">
-              <a href="https://github.com/brandoneck/facturasAI" target="_blank" rel="noopener">
-                GitHub Code
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </section>
 
     <section id="contact">
@@ -169,6 +114,7 @@
       </div>
     </section>
 
+    <script src="js/projects.js"></script>
 </body>
 
 </html>
