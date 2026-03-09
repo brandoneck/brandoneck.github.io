@@ -30,24 +30,25 @@ const container = document.getElementById("projects-container");
 projects.forEach(project => {
     const card = `
     <div class="card">
-          <img class="project-img" src="${project.src}" alt="${project.title} screenshot">
+      <img 
+        class="project-img"
+        src="${project.src}" 
+        data-img="${project.src}"
+        alt="${project.title} screenshot">
 
-          <div class="card-content">
-            <h3>${project.title}</h3>
-            <p>
-              ${project.description}
-            </p>
+      <div class="card-content">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
 
-            <p>
-              ${project.tech}
-            </p>
-            <div class="buttons">
-              <a href="${project.github}" target="_blank" rel="noopener">
-                GitHub Code
-              </a>
-            </div>
-          </div>
+        <p>${project.tech}</p>
+
+        <div class="buttons">
+          <a href="${project.github}" target="_blank" rel="noopener">
+            GitHub Code
+          </a>
         </div>
+      </div>
+    </div>
   `;
 
     container.innerHTML += card;
