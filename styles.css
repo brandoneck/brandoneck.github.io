@@ -256,3 +256,17 @@ header{
   color: #2563eb;
   transform: scale(1.2);
 }
+
+#circuit{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+  opacity:0.12;
+}
+
+canvas{
+  filter: drop-shadow(0 0 3px #3b82f6);
+}
