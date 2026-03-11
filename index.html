@@ -11,123 +11,85 @@
 
 <body>
   <canvas id="circuit"></canvas>
-
   <header>
     <section class="hero">
       <h1 class="name">Brandon Lara</h1>
 
-        <!-- <div class="tech-icons">
-        <i class="fa-brands fa-js"></i>
-        <i class="fa-brands fa-react"></i>
-        <i class="fa-brands fa-node"></i>
-        <i class="fa-brands fa-github"></i>
-        <i class="fa-brands fa-html5"></i>
-        <i class="fa-brands fa-css3-alt"></i>
-      </div> -->
-
       <h2>
         I am a <span id="typing"></span>
       </h2>
-    </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-
-      <p>
-        Software developer focused on building web and mobile
-        applications using the React ecosystem.<br>
-        I have experience working with React, Next.js and React Native,
-        as well as integrating backend APIs using Node.js and NestJS.
-        <br>
-        I enjoy building clean user interfaces and scalable solutions.
-      </p>
-
-      <p>
-
-      </p>
-
-      <div class="resume">
-        <a class="buttons" href="files/Brandon-Lara-CV.pdf" target="_blank">
-          Download CV
-        </a>
-      </div>
-    </section>
-
-    <section class="tech-stack">
-      <h2>Tech Stack</h2>
-
-      <div class="tech-grid">
-
-        <div class="tech-column">
-          <h3>Frontend</h3>
-          <div class="tech-items">
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Next.js</span>
-            <span>React Native</span>
-            <span>Redux Toolkit</span>
-            <span>HTML</span>
-            <span>CSS</span>
-          </div>
-        </div>
-
-        <div class="tech-column">
-          <h3>Backend</h3>
-          <div class="tech-items">
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>Firebase</span>
-            <span>Nest</span>
-          </div>
-        </div>
-
-        <div class="tech-column">
-          <h3>Tools & Testing</h3>
-          <div class="tech-items">
-            <span>Git</span>
-            <span>Figma</span>
-            <span>Material UI</span>
-            <span>Jest</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-
-      <div id="projects-container" class="projects-grid"></div>
-
-
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact-links">
-        <a href="mailto:brandoneck@live.com.mx">
-          <i class="fas fa-envelope"></i>
-        </a>
-
+      <div class="buttons">
         <a href="https://github.com/brandoneck" target="_blank">
-          <i class="fab fa-github"></i>
+          <i class="fa-brands fa-github"></i> GitHub
         </a>
 
-        <a href="https://linkedin.com/in/brandonlr" target="_blank">
-          <i class="fab fa-linkedin"></i>
+        <a href="files/Brandon-Lara-CV.pdf" target="_blank">
+          <i class="fa-solid fa-file-arrow-down"></i> Download CV
         </a>
       </div>
+
     </section>
+  </header>
 
-    <div id="image-modal" class="modal">
-      <span class="close">&times;</span>
-      <img id="modal-img">
+  <section class="projects">
+    <h2>Projects</h2>
+    <div id="projects-container" class="projects-grid"></div>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid" id="tech-stack-container"></div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+
+    <p>
+      Full-Stack JavaScript Developer with 6+ years of experience building scalable web and mobile applications using
+      React, React Native, Next.js, and Node.js.
+      I specialize in frontend architecture, reusable component design, API integration, and creating scalable UI
+      systems.
+      I enjoy turning ideas into clean, functional interfaces and real-world products.
+    </p>
+    <p>
+    </p>
+    <div class="resume">
+      <a class="buttons" href="files/Brandon-Lara-CV.pdf" target="_blank">
+        <i class="fa-solid fa-file-arrow-down"></i> Download CV
+      </a>
     </div>
+  </section>
 
-    <script src="js/projects.js"></script>
-    <script src="js/circuit.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/typing.js"></script>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:brandoneck@live.com.mx">
+        <i class="fas fa-envelope"></i>
+      </a>
+
+      <a href="https://github.com/brandoneck" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://linkedin.com/in/brandonlr" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
+
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modal-img">
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/circuit.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/tech-stack.js"></script>
 
 </body>
 

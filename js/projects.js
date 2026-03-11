@@ -5,7 +5,7 @@ const projects = [
       "Landing page for a hospital with informational sections, editable content and a responsive design.",
     tech: "React • Next.js • Responsive UI",
     github: "https://github.com/brandoneck/hospital",
-    src:"images/hospital.png",
+    src: "images/hospital.png",
   },
   {
     title: "Weather Forecast Mobile App",
@@ -13,7 +13,7 @@ const projects = [
       "Mobile app for viewing weather forecasts with a clean and intuitive interface.",
     tech: "React • Redux Toolkit • Material UI",
     github: "https://github.com/brandoneck/weatherApp",
-    src:"images/app.jpeg",
+    src: "images/app.png",
   },
   {
     title: "Invoice Format Converter (AI)",
@@ -21,14 +21,14 @@ const projects = [
       "Script that uses the Gemini API to convert invoices from different formats into a standardized JSON structure.",
     tech: "Python • Gemini API • Data Processing",
     github: "https://github.com/brandoneck/facturasAI",
-    src:"images/facturas.png",
+    src: "images/facturas.png",
   }
 ];
 
 const container = document.getElementById("projects-container");
 
 projects.forEach(project => {
-    const card = `
+  const card = `
     <div class="card">
       <img 
         class="project-img"
@@ -51,5 +51,5 @@ projects.forEach(project => {
     </div>
   `;
 
-    container.innerHTML += card;
+  container.innerHTML += card;
 });
