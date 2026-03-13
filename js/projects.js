@@ -53,3 +53,25 @@ projects.forEach(project => {
 
   container.innerHTML += card;
 });
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+
+      cards.forEach((card, index) => {
+        setTimeout(() => {
+          card.classList.add("show");
+        }, index * 200);
+      });
+
+      observer.unobserve(entry.target); // evita repetir
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+observer.observe(container);
+

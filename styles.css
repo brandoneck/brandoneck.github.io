@@ -186,7 +186,16 @@ header{
   overflow: hidden;
   padding: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease;
 }
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -380,3 +389,15 @@ canvas{
   100%{opacity:1}
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(5px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
