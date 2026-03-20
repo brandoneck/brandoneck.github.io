@@ -172,7 +172,6 @@ header{
   text-align: center;
 }
 
-/* contenedor de las cards */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -230,9 +229,6 @@ header{
   text-align: center;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-}
 
 .card img{
   width:100%;

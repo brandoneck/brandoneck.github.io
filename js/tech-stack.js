@@ -40,17 +40,13 @@ const techStack = [
 
 const techContainer = document.getElementById("tech-stack-container");
 
-techStack.forEach(tech => {
-
-  const column = `
-    <div class="tech-column">
-      <h3>${tech.category}</h3>
-      <div class="tech-items">
-        ${tech.items.map(item => `<span>${item}</span>`).join("")}
-      </div>
+const html = techStack.map(tech => `
+  <div class="tech-column">
+    <h3>${tech.category}</h3>
+    <div class="tech-items">
+      ${tech.items.map(item => `<span>${item}</span>`).join("")}
     </div>
-  `;
+  </div>
+`).join("");
 
-  techContainer.insertAdjacentHTML("beforeend", column);
-
-});
+techContainer.innerHTML = html;

@@ -56,22 +56,18 @@ projects.forEach(project => {
 
 const cards = document.querySelectorAll(".card");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-
-      cards.forEach((card, index) => {
-        setTimeout(() => {
-          card.classList.add("show");
-        }, index * 200);
-      });
-
-      observer.unobserve(entry.target); // evita repetir
-    }
-  });
-}, {
-  threshold: 0.2
+cards.forEach((card, index) => {
+  card.style.transitionDelay = `${index * 0.15}s`;
 });
 
-observer.observe(container);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.2 });
+
+cards.forEach(card => observer.observe(card));
 
