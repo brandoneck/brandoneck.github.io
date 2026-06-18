@@ -31,6 +31,8 @@ const techStack = [
       "Git",
       "GitHub Actions",
       "Vercel",
+      "GCP",
+      "Linux",
       "Figma",
       "Material UI",
       "Jest",
