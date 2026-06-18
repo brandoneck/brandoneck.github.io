@@ -18,7 +18,6 @@ const techStack = [
     items: [
       "Node.js",
       "Express",
-      "Firebase",
       "Nest",
       "Laravel",
       "PHP",
@@ -30,6 +29,8 @@ const techStack = [
     category: "Tools & Testing",
     items: [
       "Git",
+      "GitHub Actions",
+      "Vercel",
       "Figma",
       "Material UI",
       "Jest",

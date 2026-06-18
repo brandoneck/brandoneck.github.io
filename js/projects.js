@@ -2,9 +2,11 @@ const projects = [
   {
     title: "Hospital Branding Page",
     description:
-      "Landing page for a hospital with informational sections, editable content and a responsive design.",
-    tech: "React • Next.js • Responsive UI",
+      "Responsive hospital website with editable content sections, doctor profiles, and an intuitive user experience.",
+    tech: "React • Next.js • Responsive UI • Vercel",
+    isRepoPrivate: true,
     github: "https://github.com/brandoneck/hospital",
+    live: "https://hospital-sigma-pink.vercel.app/",
     src: "images/hospital.png",
   },
   {
@@ -12,7 +14,9 @@ const projects = [
     description:
       "Mobile app for viewing weather forecasts with a clean and intuitive interface.",
     tech: "React • Redux Toolkit • Material UI",
+    isRepoPrivate: false,
     github: "https://github.com/brandoneck/weatherApp",
+    live: null,
     src: "images/app.png",
   },
   {
@@ -20,19 +24,37 @@ const projects = [
     description:
       "Script that uses the Gemini API to convert invoices from different formats into a standardized JSON structure.",
     tech: "Python • Gemini API • Data Processing",
+    isRepoPrivate: false,
     github: "https://github.com/brandoneck/facturasAI",
+    live: null,
     src: "images/facturas.png",
   }
 ];
 
 const container = document.getElementById("projects-container");
 
-projects.forEach(project => {
+projects.forEach((project) => {
+  const githubButton = !project.isRepoPrivate
+    ? `
+      <a href="${project.github}" target="_blank" rel="noopener">
+        GitHub Code
+      </a>
+    `
+    : "";
+
+  const liveButton = project.live
+    ? `
+      <a href="${project.live}" target="_blank" rel="noopener">
+        Live Demo
+      </a>
+    `
+    : "";
+
   const card = `
     <div class="card">
-      <img 
+      <img
         class="project-img"
-        src="${project.src}" 
+        src="${project.src}"
         data-img="${project.src}"
         alt="${project.title} screenshot">
 
@@ -43,9 +65,8 @@ projects.forEach(project => {
         <p>${project.tech}</p>
 
         <div class="buttons">
-          <a href="${project.github}" target="_blank" rel="noopener">
-            GitHub Code
-          </a>
+          ${githubButton}
+          ${liveButton}
         </div>
       </div>
     </div>
