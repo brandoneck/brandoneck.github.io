@@ -1,6 +1,6 @@
 const projects = [
   {
-    title: "Hospital Branding Page",
+    title: "Hospital HealthCare Website",
     description:
       "Responsive hospital website with editable content sections, doctor profiles, and an intuitive user experience.",
     tech: "React • Next.js • Responsive UI • Vercel",
